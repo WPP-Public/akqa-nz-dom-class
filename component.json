@@ -1,8 +1,8 @@
 {
-  "name": "async-load",
-  "title": "Async load",
-  "description": "An extremely miminal script loader",
+  "name": "dom-class",
+  "title": "DOM class manipulator",
+  "description": "An extremely miminal DOM element class manipulator",
   "version": "0.0.0",
-  "main": [ "load.js" ],
+  "main": [ "class.js" ],
   "dependencies": {}
 }

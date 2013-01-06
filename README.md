@@ -1,4 +1,4 @@
-less-helpers
+dom-class
 ============
 
-Less helper mixins and styles
+An extremely miminal DOM element class manipulator
