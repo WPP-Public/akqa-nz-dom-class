@@ -41,6 +41,7 @@ define( function() {
 	 * @constructor
 	 */
 	Class = function( el ) {
+		if ( !( this instanceof Class ) ) { return new Class( el ); }
 		this._el = el;
 	};
 
