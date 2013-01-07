@@ -9,6 +9,7 @@
  * @version 0.1.0
  */
 
+/*jshint laxbreak:true */
 ( function( define ) { 'use strict';
 define( function() {
 
