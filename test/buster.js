@@ -10,3 +10,20 @@ config[ 'browser global' ] = {
 		'class.js'
 	]
 };
+
+config[ 'browser AMD' ] = {
+	environment: 'browser',
+	rootPath: '../',
+	libs: [
+		'node_modules/requirejs/require.js'
+	],
+	tests: [
+		'test/*-test.js'
+	],
+	resources: [
+		'class.js'
+	],
+	extensions: [
+		require( 'buster-amd' )
+	]
+};

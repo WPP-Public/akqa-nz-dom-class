@@ -1,6 +1,6 @@
 /*jshint browser:true */
 ( function( define ) { 'use strict';
-define( [ 'buster', 'dom-class' ], function( buster, DOMClass ) {
+define( [ 'buster', '../class' ], function( buster, DOMClass ) {
 
 	// Buster setup
 	var expect = buster.assertions.expect,
