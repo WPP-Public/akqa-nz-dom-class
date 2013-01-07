@@ -1,8 +1,26 @@
 {
   "name": "dom-class",
-  "title": "DOM class manipulator",
+  "version": "0.1.0",
   "description": "An extremely miminal DOM element class manipulator",
-  "version": "0.0.0",
+  "keywords": [ "DOM", "class" ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://heyday.mit-license.org/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/heyday/dom-class"
+    }
+  ],
+  "bugs": "https://github.com/heyday/dom-class/issues",
+  "maintainers": [
+    {
+      "name": "Pieter Vanderwerff"
+    }
+  ],
   "main": [ "class.js" ],
   "dependencies": {}
 }
