@@ -9,7 +9,7 @@
  * @version 0.1.0
  */
 
-(function(define) { 'use strict';
+( function( define ) { 'use strict';
 define( function() {
 
 	var Class, wrap, trim, EMPTY = ' ';
@@ -91,6 +91,6 @@ define( function() {
 } );
 } )( typeof define == 'function'
 	? define
-	: function( deps, factory ) { this.DomClass = factory(); }
+	: function( factory ) { this.DOMClass = factory(); }
 	// Boilerplate for AMD, and browser global
 );
