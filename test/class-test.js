@@ -1,4 +1,4 @@
-/*jshint browser:true */
+/*jshint browser:true, laxbreak:true */
 ( function( define ) { 'use strict';
 define( [ 'buster', '../class' ], function( buster, DOMClass ) {
 
@@ -7,9 +7,9 @@ define( [ 'buster', '../class' ], function( buster, DOMClass ) {
 		describe = buster.spec.describe, it = buster.spec.it,
 		before = buster.spec.before, after = buster.spec.after;
 
-//
-// Tests
-//
+	//
+	// Tests
+	//
 	describe( 'DOMClass', function() {
 		before( function() {
 			this.el = document.createElement( 'div' );
@@ -26,7 +26,7 @@ define( [ 'buster', '../class' ], function( buster, DOMClass ) {
 			expect( dom_class instanceof DOMClass ).toBeTrue();
 		} );
 
-		it( 'can be initialized via function call', function() {
+		it( 'can be initialized via function call', function() {/*jshint newcap:false */
 			var dom_class = DOMClass( this.el );
 			expect( dom_class ).toBeObject();
 			expect( dom_class instanceof DOMClass ).toBeTrue();
@@ -41,11 +41,12 @@ define( [ 'buster', '../class' ], function( buster, DOMClass ) {
 			} );
 
 			it( '1 class', function() {
-				this.el.className = 'bob';
+				this.el.className = ' bob ';
 				var dom_class = new DOMClass( this.el );
 				
 				expect( dom_class.get() ).toBeString();
 				expect( dom_class.get() ).toMatch( 'bob' );
+				expect( dom_class.get() ).toBe( 'bob' );
 			} );
 
 			it( 'many classes', function() {
