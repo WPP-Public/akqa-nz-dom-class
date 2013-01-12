@@ -1,4 +1,4 @@
-/** @license MIT License (c) copyright Heyday Digital */
+/** @license MIT License (c) Heyday Digital */
 
 /**
  * An extremely miminal DOM element class manipulator
@@ -10,7 +10,7 @@
  */
 
 /*jshint laxbreak:true */
-( function( define ) { 'use strict';
+( function( define ) {
 define( function() {
 
 	var Class, wrap, trim, EMPTY = ' ';
@@ -54,7 +54,7 @@ define( function() {
 		 * @return {Boolean}
 		 */
 		has: function( str ) {
-			return !!~( this.get() ).indexOf( wrap( str ) );
+			return !!~( wrap( this.get() ) ).indexOf( wrap( str ) );
 		},
 
 		/**
@@ -62,7 +62,7 @@ define( function() {
 		 * @return {String}
 		 */
 		get: function() {
-			return wrap( this._el.className );
+			return trim( this._el.className );
 		},
 
 		/**
@@ -83,7 +83,7 @@ define( function() {
 		 * @return {Class} Referance to itself, for chaining
 		 */
 		remove: function( str ) {
-			this._el.className = trim( ( this.get() ).replace( wrap( str ), EMPTY ) );
+			this._el.className = trim( wrap( this.get() ).replace( wrap( str ), EMPTY ) );
 			return this;
 		}
 	};
