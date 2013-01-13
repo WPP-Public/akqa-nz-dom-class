@@ -31,14 +31,14 @@ module.exports = function( grunt ) {
 	};
 
 	// Lint all files
-	config.jshint[ 'all' ] = ['Gruntfile.js', 'load.js', 'test/**/*.js'];
+	config.jshint[ 'all' ] = ['Gruntfile.js', 'class.js', 'test/**/*.js'];
 
 	// Test all files
 	config.buster[ 'browser global' ] = {};
 	config.buster[ 'browser AMD' ] = {};
 
 	// Minify lib
-	config.uglify[ 'load' ] = {
+	config.uglify[ 'class' ] = {
 		options: {
 			preserveComments: 'some'
 		},
