@@ -2,7 +2,7 @@
 
 An extremely miminal DOM element class manipulator, with a simple but featured API. **dom-class** is **under 310bytes** when complied with uglify2 and gzipped, and has a full unit test suite that passes in all popular browsers (and some not so popular browsers including IE6+).
 
-This library is made to be as small as possible so it can be inlined into the head of your html. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured html maniplation library (i.e. jQuery) loads.
+This library is made to be as small as possible so it can be inlined into the head of your html. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured html maniplation library (e.g. jQuery) loads.
 
 
 Quick Start
@@ -103,7 +103,7 @@ Common usage
 ===========
 
 ### Replace no-js class with js
-Set JavaScript to active for your style, common for the h5bp html template.
+Detect whether JavaScript is enabled and provide a hook for your CSS – a common technique with the h5bp html template.
 
 ```javascript
 domClass( document.documentElement )
