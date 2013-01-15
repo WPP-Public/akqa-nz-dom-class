@@ -13,7 +13,7 @@
 ( function( define ) {
 define( function() {
 
-	var Class, wrap, trim, EMPTY = ' ';
+	var DOMClass, wrap, trim, EMPTY = ' ';
 
 	/**
 	 * Wrap string in whitespace
@@ -41,12 +41,11 @@ define( function() {
 	 * @param {DOMNode} el Dom node to proform class manpulations on
 	 * @constructor
 	 */
-	Class = function( el ) {
-		if ( !( this instanceof Class ) ) { return new Class( el ); }
-		this._el = el;
+	DOMClass = function( el ) {
+		this.e = el;
 	};
 
-	Class.prototype = {
+	DOMClass.prototype = {
 
 		/**
 		 * Check if DOMNode has a specific Class
@@ -62,7 +61,7 @@ define( function() {
 		 * @return {String}
 		 */
 		get: function() {
-			return trim( this._el.className );
+			return trim( this.e.className );
 		},
 
 		/**
@@ -72,7 +71,7 @@ define( function() {
 		 */
 		add: function( str ) {
 			if ( !this.has( str ) ) {
-				this._el.className += EMPTY + str;
+				this.e.className += EMPTY + str;
 			}
 			return this;
 		},
@@ -83,15 +82,22 @@ define( function() {
 		 * @return {Class} Referance to itself, for chaining
 		 */
 		remove: function( str ) {
-			this._el.className = trim( wrap( this.get() ).replace( wrap( str ), EMPTY ) );
+			this.e.className = trim( wrap( this.get() ).replace( wrap( str ), EMPTY ) );
 			return this;
 		}
 	};
 
-	return Class;
+	/**
+	 * Create new class manipulator wrapping a DOMNode
+	 * @param  {DOMNode} el Element to wrap
+	 * @return {DOMClass}   Dom class API
+	 */
+	return function( el ) {
+		return new DOMClass( el );
+	};
 } );
 } )( typeof define == 'function'
 	? define
-	: function( factory ) { this.DOMClass = factory(); }
+	: function( factory ) { this.domClass = factory(); }
 	// Boilerplate for AMD, and browser global
 );
