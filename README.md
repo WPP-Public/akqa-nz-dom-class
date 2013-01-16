@@ -49,16 +49,16 @@ el_class.get(); // returns 'no-cookie loading' - String
 
 ### Creation
 
-###### Browser global:
-```javascript
-var el_class = window.domClass( domElement );
-```
-
-###### AMD enviroment:
+###### AMD environment:
 ```javascript
 define( [ 'dom-class' ], function( domClass ) {
 	var el_class = domClass( domElement );
 } );
+```
+
+###### Browser global:
+```javascript
+var el_class = window.domClass( domElement );
 ```
 
 ### Add
