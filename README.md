@@ -91,7 +91,7 @@ var boolean = el_class.has( 'class-to-check' );
 ```
 
 ### Get
-Retrieve the elements `className` property, returns a space delimited list of the elements current classes.
+Retrieve the element's `className` property, returns a space delimited list of the element's current classes.
 
 ```javascript
 var class_list = el_class.get();
