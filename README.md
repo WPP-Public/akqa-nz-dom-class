@@ -1,8 +1,8 @@
 # dom-class [![Build Status](https://secure.travis-ci.org/heyday/dom-class.png)](http://travis-ci.org/heyday/dom-class)
 
-An extremely miminal DOM element class manipulator, with a simple but featured API. **dom-class** is **under 310bytes** when complied with uglify2 and gzipped, and has a full unit test suite that passes in all popular browsers (and some not so popular browsers including IE6+).
+An extremely miminal DOM element class manipulator, with a simple but featured API. **dom-class** is **under 310bytes** when compiled with Uglify2 and gzipped, and has a full unit test suite that passes in all popular browsers (and some not so popular browsers including IE6+).
 
-This library is made to be as small as possible so it can be inlined into the head of your html. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured html maniplation library (e.g. jQuery) loads.
+This library is made to be as small as possible so it can be inlined into the head of your HTML. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured HTML maniplation library (e.g. jQuery) loads.
 
 
 Quick Start
@@ -62,7 +62,7 @@ define( [ 'dom-class' ], function( domClass ) {
 ```
 
 ### Add
-Adds the specified class from the html element if it is not already there. This method is chainable
+Adds the specified class from the HTML element if it is not already there. This method is chainable.
 
 ```javascript
 el_class.add( 'class-to-add' );
@@ -73,7 +73,7 @@ el_class.add( 'class-to-add-1' )
 ```
 
 ### Remove
-Removes the specified class from the html element if it exists. This method is chainable.
+Removes the specified class from the HTML element if it exists. This method is chainable.
 
 ```javascript
 el_class.remove( 'class-to-remove' );
@@ -84,7 +84,7 @@ el_class.remove( 'class-to-remove-1' )
 ```
 
 ### Has
-Check whether an html element has a specific class, returns `true` or `false`.
+Check whether an HTML element has a specific class, returns `true` or `false`.
 
 ```javascript
 var boolean = el_class.has( 'class-to-check' );
@@ -103,7 +103,7 @@ Common usage
 ===========
 
 ### Replace no-js class with js
-Detect whether JavaScript is enabled and provide a hook for your CSS – a common technique with the h5bp html template.
+Detect whether JavaScript is enabled and provide a hook for your CSS – a common technique with the h5bp HTML template.
 
 ```javascript
 domClass( document.documentElement )
@@ -131,11 +131,11 @@ Development
 # Running the unit tests
 
 1. `npm install` - Install all required dev modules
-1. `npm install -g grunt-cli` - Install grunt
-1. `grunt test` - Lints all files then runs the unit tests in a Phantomjs instance
+1. `npm install -g grunt-cli` - Install Grunt
+1. `grunt test` - Lints all files, and then runs the unit tests in a PhantomJS instance
 
 # Building the module locally
 
 1. `npm install` - Install all required dev modules
-1. `npm install -g grunt-cli` - Install grunt
-1. `grunt build` - Runs all tests then builds the production file
+1. `npm install -g grunt-cli` - Install Grunt
+1. `grunt build` - Runs all tests, and then then builds the production file
