@@ -5,8 +5,7 @@ An extremely miminal DOM element class manipulator, with a simple but featured A
 This library is made to be as small as possible so it can be inlined into the head of your HTML. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured HTML maniplation library (e.g. jQuery) loads.
 
 
-Quick Start
-===========
+## Quick Start
 
 Three options are available for getting the source:
 
@@ -33,8 +32,7 @@ Three options are available for getting the source:
 1. `dom-class` will be available as `window.domClass`
 
 
-API
-===========
+## API
 
 ```javascript
 var el_class = domClass( document.documentElement ); // Manipulate the `html` tag
@@ -97,10 +95,7 @@ Retrieve the element's `className` property, returns a space delimited list of t
 var class_list = el_class.get();
 ```
 
-
-
-Common usage
-===========
+## Common usage
 
 ### Replace no-js class with js
 Detect whether JavaScript is enabled and provide a hook for your CSS – a common technique with the h5bp HTML template.
@@ -125,16 +120,15 @@ asyncLoad( 'load/some/file.js', function() {
 } );
 ```
 
-Development
-===========
+## Development
 
-# Running the unit tests
+### Running the unit tests
 
 1. `npm install` - Install all required dev modules
 1. `npm install -g grunt-cli` - Install Grunt
 1. `grunt test` - Lints all files, and then runs the unit tests in a PhantomJS instance
 
-# Building the module locally
+### Building the module locally
 
 1. `npm install` - Install all required dev modules
 1. `npm install -g grunt-cli` - Install Grunt
