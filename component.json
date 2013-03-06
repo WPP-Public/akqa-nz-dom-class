@@ -1,6 +1,7 @@
 {
   "name": "dom-class",
   "version": "0.1.0",
+  "main": [ "class.js" ],
   "description": "An extremely miminal DOM element class manipulator",
   "keywords": [ "DOM", "class" ],
   "licenses": [
@@ -21,6 +22,11 @@
       "name": "Pieter Vanderwerff"
     }
   ],
-  "main": [ "class.js" ],
-  "dependencies": {}
+  "ignore": [
+    "test/",
+    ".gitignore",
+    ".travis.yml",
+    "Gruntfile.js",
+    "package.json"
+  ]
 }
