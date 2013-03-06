@@ -1,6 +1,6 @@
 {
   "name": "dom-class",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": [ "class.js" ],
   "description": "An extremely miminal DOM element class manipulator",
   "keywords": [ "DOM", "class" ],
