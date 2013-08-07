@@ -2,7 +2,7 @@
   "name": "dom-class",
   "version": "0.1.1",
   "main": [ "class.js" ],
-  "description": "An extremely miminal DOM element class manipulator",
+  "description": "An extremely minimal DOM element class manipulator",
   "keywords": [ "DOM", "class" ],
   "licenses": [
     {

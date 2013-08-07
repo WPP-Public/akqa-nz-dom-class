@@ -2,7 +2,7 @@
 
 An extremely miminal DOM element class manipulator, with a simple but featured API. **dom-class** is **under 310bytes** when compiled with Uglify2 and gzipped, and has a full unit test suite that passes in all popular browsers (and some not so popular browsers including IE6+).
 
-This library is made to be as small as possible so it can be inlined into the head of your HTML. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured HTML maniplation library (e.g. jQuery) loads.
+This library is made to be as small as possible so it can be inlined into the head of your HTML. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured HTML manipulation library (e.g. jQuery) loads.
 
 
 ## Quick Start
@@ -116,7 +116,7 @@ var el = domClass( document.documentElement )
 asyncLoad( 'load/some/file.js', function() {
 	el.remove( 'loading' );
 
-	// Initalize application
+	// Initialize application
 } );
 ```
 

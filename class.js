@@ -1,7 +1,7 @@
 /** @license MIT License (c) Heyday Digital */
 
 /**
- * An extremely miminal DOM element class manipulator
+ * An extremely minimal DOM element class manipulator
  *
  * Licensed under the MIT License at:
  * http://heyday.mit-license.org/
@@ -38,8 +38,10 @@ define( function() {
 
 	/**
 	 * Constructor for the dom-class manipulator
-	 * @param {DOMNode} el Dom node to proform class manpulations on
+	 * @class DOMClass
+	 *
 	 * @constructor
+	 * @param {HTMLElement} el Dom node to perform class manipulations on
 	 */
 	DOMClass = function( el ) {
 		this.e = el;
@@ -48,8 +50,8 @@ define( function() {
 	DOMClass.prototype = {
 
 		/**
-		 * Check if DOMNode has a specific Class
-		 * @param  {String}  str String to be searched for in Class list
+		 * Check if HTMLElement has a specific class
+		 * @param  {String}  str String to be searched for in className
 		 * @return {Boolean}
 		 */
 		has: function( str ) {
@@ -57,7 +59,7 @@ define( function() {
 		},
 
 		/**
-		 * Get Class names for DOMNode
+		 * Get className value for HTMLElement
 		 * @return {String}
 		 */
 		get: function() {
@@ -65,9 +67,9 @@ define( function() {
 		},
 
 		/**
-		 * Add Class to DOMNode Class list if not already added
-		 * @param {String} str Class to be added
-		 * @return {Class} Referance to itself, for chaining
+		 * Add className to HTMLElement if not already added
+		 * @param {String} str class to be added
+		 * @chainable
 		 */
 		add: function( str ) {
 			if ( !this.has( str ) ) {
@@ -77,9 +79,9 @@ define( function() {
 		},
 
 		/**
-		 * Remove Class from DOMNode Class list
+		 * Remove className from HTMLElement
 		 * @param  {String} str String to be removed
-		 * @return {Class} Referance to itself, for chaining
+		 * @chainable
 		 */
 		remove: function( str ) {
 			this.e.className = trim( wrap( this.get() ).replace( wrap( str ), EMPTY ) );
@@ -88,9 +90,9 @@ define( function() {
 	};
 
 	/**
-	 * Create new class manipulator wrapping a DOMNode
-	 * @param  {DOMNode} el Element to wrap
-	 * @return {DOMClass}   Dom class API
+	 * Create new className manipulator wrapping a HTMLElement
+	 * @param  {HTMLElement} el Element to wrap
+	 * @return {DOMClass}    DOMClass instance
 	 */
 	return function( el ) {
 		return new DOMClass( el );
