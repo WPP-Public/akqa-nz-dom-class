@@ -32,7 +32,7 @@ define( function() {
 	 * @return {String}
 	 */
 	trim = function( str ) {
-		return !str ? '' : str.toString().replace( /^\s+/, '' ).replace( /\s+$/, '' );
+		return !str ? '' : str.toString().replace( /^\s+|\s+$/g, '' );
 	};
 
 
