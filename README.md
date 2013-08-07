@@ -1,6 +1,6 @@
 # dom-class [![Build Status](https://secure.travis-ci.org/heyday/dom-class.png)](http://travis-ci.org/heyday/dom-class)
 
-An extremely miminal DOM element class manipulator, with a simple but featured API. **dom-class** is **under 310bytes** when compiled with Uglify2 and gzipped, and has a full unit test suite that passes in all popular browsers (and some not so popular browsers including IE6+).
+An extremely minimal DOM element class manipulator, with a simple but featured API. **dom-class** is **under 150bytes** when compiled with Uglify2 and gzipped, and has a full unit test suite that passes in all popular browsers (and some not so popular browsers including IE6+).
 
 This library is made to be as small as possible so it can be inlined into the head of your HTML. This means it can be used to bootstrap your application based on predefined classes, set up basic styles for specific environments, and add classes based on basic feature tests – all before your more fully featured HTML manipulation library (e.g. jQuery) loads.
 
