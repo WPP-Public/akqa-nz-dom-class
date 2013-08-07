@@ -55,7 +55,7 @@ define( function() {
 		 * @return {Boolean}
 		 */
 		has: function( str ) {
-			return !!~( wrap( this.get() ) ).indexOf( wrap( str ) );
+			return ( wrap( this.get() ) ).indexOf( wrap( str ) ) > -1;
 		},
 
 		/**
