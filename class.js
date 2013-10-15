@@ -9,7 +9,7 @@
  * @version 0.1.3
  */
 
-/*jshint laxbreak:true */
+/*jshint laxbreak:true, expr:true */
 ( function( define ) {
 define( function() {
 
