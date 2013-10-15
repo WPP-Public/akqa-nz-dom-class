@@ -2,22 +2,15 @@
   "name": "dom-class",
   "version": "0.1.3",
   "description": "An extremely minimal DOM element class manipulator",
-  "keywords": [
-    "DOM",
-    "class"
-  ],
-  "licenses": [
-    {
+  "keywords": [ "DOM", "class" ],
+  "license": {
       "type": "MIT",
       "url": "http://heyday.mit-license.org/"
-    }
-  ],
-  "repositories": [
-    {
+	},
+  "repository": {
       "type": "git",
       "url": "https://github.com/heyday/dom-class"
-    }
-  ],
+	},
   "bugs": "https://github.com/heyday/dom-class/issues",
   "maintainers": [
     {
