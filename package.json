@@ -24,9 +24,7 @@
       "name": "Pieter Vanderwerff"
     }
   ],
-  "main": [
-    "class.js"
-  ],
+  "main": "class.js",
   "devDependencies": {
     "buster": "~0.6",
     "buster-amd": "git://github.com/busterjs/buster-amd.git",
