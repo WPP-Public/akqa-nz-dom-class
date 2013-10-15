@@ -98,8 +98,8 @@ define( function() {
 		return new DOMClass( el );
 	};
 } );
-} )( typeof define == 'function'
-	? define
-	: function( factory ) { this.domClass = factory(); }
-	// Boilerplate for AMD, and browser global
+} )( typeof define === 'function' && define.amd
+		? define
+		: function( factory ) { typeof exports === 'object' ? module.exports = factory() : this.domClass = factory(); }
+			// Boilerplate for AMD, CommonJS and browser global
 );
