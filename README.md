@@ -59,6 +59,13 @@ define( [ 'dom-class' ], function( domClass ) {
 var el_class = window.domClass( domElement );
 ```
 
+###### CommonJS environment:
+```javascript
+var domClass = require( 'dom-class' );
+
+var el_class = domClass( domElement );
+```
+
 ### Add
 Adds the specified class from the HTML element if it is not already there. This method is chainable.
 
